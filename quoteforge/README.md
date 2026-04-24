@@ -119,4 +119,3 @@ RLS is enabled on all tables. Users can only access their own data.
 - [ ] Quote accept/decline flow
 - [ ] Dashboard analytics (sent, viewed, accepted rates)
 - [ ] Stripe integration for deposits
-# QuoteForgee
