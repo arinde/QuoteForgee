@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { toast } from 'react-hot-toast'
 import { Eye, EyeOff, Zap, CheckCircle2 } from 'lucide-react'
-import { useAuthStore } from '../../store/authStore'
+import { useAuthStore } from '../store/authStore'
 
 const PASSWORD_RULES = [
   { label: 'At least 8 characters', test: (p) => p.length >= 8 },
@@ -32,7 +32,7 @@ export default function SignupPage() {
     if (!form.fullName || !form.email || !form.password)
       return toast.error('Please fill in all required fields.')
     if (passwordStrength < PASSWORD_RULES.length)
-      return toast.error('Password doesn't meet requirements.')
+      return toast.error('Password doesnt meet requirements.')
 
     setLoading(true)
     const { error } = await signUp({

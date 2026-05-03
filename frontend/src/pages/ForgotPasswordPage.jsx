@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { toast } from 'react-hot-toast'
 import { Zap, ArrowLeft, Mail } from 'lucide-react'
-import { useAuthStore } from '../../store/authStore'
+import { useAuthStore } from '../store/authStore'
 
 export default function ForgotPasswordPage() {
   const { resetPassword } = useAuthStore()

@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { toast } from 'react-hot-toast'
 import { Eye, EyeOff, Zap } from 'lucide-react'
-import { useAuthStore } from '../../store/authStore'
+import { useAuthStore } from '../store/authStore'
 
 export default function LoginPage() {
   const navigate = useNavigate()
