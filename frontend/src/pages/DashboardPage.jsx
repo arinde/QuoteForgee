@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { useAuthStore } from '../store/authStore'
+import { useAuthStore } from "../store/authStore"
 import { useQuotesStore } from '../store/quotesStore'
 import { StatusBadge } from '../components/ui/StatusBadge'
 import { EmptyState } from '../components/ui/EmptyState'
@@ -16,6 +16,7 @@ import { cn } from '../lib/utils'
 const STATUSES = ['all', 'draft', 'sent', 'viewed', 'accepted', 'declined']
 
 function getGreeting() {
+
   const h = new Date().getHours()
   if (h < 12) return 'morning'
   if (h < 17) return 'afternoon'

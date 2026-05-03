@@ -32,7 +32,7 @@ export default function SignupPage() {
     if (!form.fullName || !form.email || !form.password)
       return toast.error('Please fill in all required fields.')
     if (passwordStrength < PASSWORD_RULES.length)
-      return toast.error('Password doesnt meet requirements.')
+      return toast.error('Password doesn\'t meet requirements.')
 
     setLoading(true)
     const { error } = await signUp({
