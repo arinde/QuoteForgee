@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { supabase } from '../../lib/supabase'
+import { supabase } from '../lib/supabase'
 import { toast } from 'react-hot-toast'
 import { Zap } from 'lucide-react'
 
